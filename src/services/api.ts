@@ -10,8 +10,8 @@ export interface Todo {
 
 export const getTodos = async () => {
     try {
-      const response = await apiClient.get<Todo[]>('/');
-      return response.data;
+        const response = await apiClient.get<{ message: string; tasks: Todo[] }>('');
+        return response.data.tasks; // Returnera listan av uppgifter
     } catch (error) {
       console.error('Error fetching todos:', error);
       throw error;
