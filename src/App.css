@@ -4,4 +4,5 @@ body, html {
   height: 100vh;
   font-size: 22px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(53, 32, 65);
 }
